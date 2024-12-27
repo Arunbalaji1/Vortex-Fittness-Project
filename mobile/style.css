@@ -1,0 +1,251 @@
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.container,.container-fluid{
+  overflow-x: hidden;
+}
+/* NAV BAR */
+nav{
+  background-color: black ;
+  border-bottom: 1px solid #84ec34 ;
+}
+nav ul{
+  margin:0 ;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 0;
+}
+nav li{
+  height: 50px; 
+}
+.btn{
+  background-color:#84ec34 !important;
+  color: black;  
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav a:hover{
+  text-decoration-line: underline;
+  text-decoration-color: #84ec34;
+}
+nav li:first-child{
+  margin-right: auto;
+  margin-left: 0;
+} 
+.sidebar{
+  display:none  ;
+  z-index:5;
+  position:fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none; 
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width:100%;
+}
+.sidebar a{
+  width:100%;
+}
+.menu-button{
+  display:none;
+}
+@media(min-width:801px){
+  .sidebar{
+    display: none !important;
+  }
+
+}
+
+@media(max-width:800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+  body{
+    /* background-image: url(mobile_bgimg.jpg); */
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+} 
+
+/* HERO */
+.Section-1{
+  background: url('bg_img1.png');
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.578);
+  height: 93vh; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.about{
+  background-color: rgba(255, 255, 255, 0.082);
+  backdrop-filter: blur(12px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #84ec3478;
+}
+.about h2,.highlight{
+  color: #84ec34;
+}
+.about p{
+  text-indent: 10vw;
+  font-size: 16px;
+}
+.hero{
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  right: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  color: white;
+} 
+@media(max-width:800px){
+  .hero{
+    top: 30%;
+    left:50%;
+    right: 50%;
+    right: 10%;
+  }
+}
+.Section-2{
+  height: 100vh;
+}
+/* TESTIMONAL */
+.Section-5{
+  background-color: black;
+  color: white;
+  min-height:  60vh;
+  padding: 20px;
+}
+.card{
+  background-color: #25282b !important;
+  color: white !important;
+  border: 1px solid #84ec34 !important;
+  max-width: 550px;
+  min-height: 200px;
+  margin-right:50px;
+}
+.c-header{
+  padding: 10px;
+}
+.card img{
+  
+  border: 2px solid;
+  border-color: inherit;
+}
+.card:hover{
+  background-color: #84ec34 !important;
+  color: black!important;
+}
+.carousel-indicators{
+  position: absolute;
+  
+  top:120%;
+}
+.carousel-indicators button{
+ background-color: #84ec34!important;
+ height: 10px!important;
+ width: 10px!important;
+ border-radius: 50%;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+  background-color: #84ec34;
+  border-radius: 50%;
+  color: red !important;
+  font-size: 20px;
+  position: absolute;
+  top: 120%;
+  
+}
+.carousel-control-prev-icon{
+  right: -160%;
+}
+.carousel-control-next-icon{
+  left: -160%;
+}
+/* SECTON3 */
+.Section-3{
+  height: 100vh;
+  
+  background-color: black;
+  color: white;
+}
+.Section-3 h1{
+  margin-bottom: 10px;
+  
+}
+.Section-3 p{
+  text-indent: 50px;
+  text-align: justify;
+}
+.Section-3 li{
+  text-align: start;
+  margin: 1px;
+}
+.Section-3 li::marker {
+  color:#84ec34;
+}
+.Subcription_plan{
+  border: 1px solid #84ec34;
+  box-shadow: 0 0 10px 3px #84ec34;
+  margin-right:3px ;
+  margin-left:3px ;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  min-height:83vh;
+  
+}
+.Subcription_plan button{
+  padding: 10px;
+  height: 50px;
+  width: 150px;
+  
+  background-color:black;
+  color: inherit;
+  border: 1px solid #84ec34;
+}
+/* SECTION-5 */
+.Section-6{
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+legend{
+ color: #84ec34;
+}

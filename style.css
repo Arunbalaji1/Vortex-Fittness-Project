@@ -1,0 +1,331 @@
+@import url('https://fonts.cdnfonts.com/css/eurostile-2');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  
+  
+
+letter-spacing: 1.5px;
+  
+}
+
+body{
+  font-family: 'Eurostile', sans-serif !important;
+  
+}
+
+.container,.container-fluid{
+  overflow-x: hidden;
+}
+/* NAV BAR */
+nav{
+  background-color: black ;
+  border-bottom: 1px solid #84ec34 ;
+  
+}
+nav ul{
+  margin:0 ;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 0;
+}
+nav li{
+  height: 50px; 
+}
+.btn{
+  background-color:#84ec34 !important;
+  color: black;  
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav a:hover{
+  text-decoration-line: underline;
+  text-decoration-color: #84ec34;
+}
+nav li:first-child{
+  margin-right: auto;
+  margin-left: 0;
+} 
+.sidebar{
+  display:none  ;
+  z-index:5;
+  position:fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none; 
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width:100%;
+}
+.sidebar a{
+  width:100%;
+}
+.menu-button{
+  display:none;
+}
+@media(min-width:890px){
+  .sidebar{
+    display: none !important;
+  }
+
+}
+
+@media(max-width:890px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+ 
+  
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+    
+  }
+}
+  
+
+/* HERO */
+.Section-1{
+  background: url('bg_img1.png');
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.578);
+  height: 94vh; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero h1{
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.hero{
+  
+  color: white;
+  font-size:large;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  
+} 
+@media(max-width:890px){
+  .Section-1{
+    background: url('mobile_background.jpg');
+  }
+  .hero h1{
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .hero{
+    top: 50%;
+    left:50%;
+    right: 50%;
+    
+  } 
+}
+/* section 1.5 */
+.Section-15{
+   height: 50vh;
+   background-color: black;
+   padding: 50px;
+   color: white;
+
+}
+.about{
+  background-color: rgba(255, 255, 255, 0.082);
+  backdrop-filter: blur(12px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #84ec3478;
+}
+.about h2,.highlight{
+  color: #84ec34;
+}
+.about p{
+  text-indent: 10vw;
+  font-size: 16px;
+}
+.Section-2{
+  height: 100vh;
+}
+/* TESTIMONAL */
+.Section-5{
+
+  background: linear-gradient(to top, #84ec34c6 0%, black 5%,  black 95%,#84ec34 100%);
+  color: white;
+  max-height: 70vh;
+  padding: 10px;
+}
+.Section-5 .card{
+  background-color: #25282b !important;
+  color: white !important;
+  border: 2px solid #84ec34 !important;
+  max-width: 550px;
+  margin-right:10px !important ;
+  margin-left:10px !important ;
+  min-height: 200px;
+  border-radius: 20px !important;
+  
+}
+.carousel{
+  margin-bottom: 15%;
+}
+.card img{
+  
+  border: 2px solid;
+  border-color: inherit;
+}
+.card:hover{
+  background-color: #84ec34 !important;
+  color: black!important;
+}
+.carousel-indicators{
+  position: absolute;
+  
+  top:120%;
+}
+.carousel-indicators button{
+ background-color: #84ec34!important;
+ height: 10px!important;
+ width: 10px!important;
+ border-radius: 50%;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+  background-color: #84ec34;
+  border-radius: 50%;
+  color: red !important;
+  font-size: 20px;
+  position: absolute;
+  top:120%;
+  
+}
+.carousel-control-prev-icon{
+  right: -160%;
+}
+.carousel-control-next-icon{
+  left: -160%;
+}
+/* SECTON3 */
+.Section-3{
+  
+  background-color: black;
+  color: white;
+  min-height: 40vh;
+}
+.Section-3 .card{
+  border-radius: 5px !important;
+  box-shadow: 0 0 10px 3px #84ec34;
+  border: none;
+  color: #84ec34;
+  margin: 20px !important;
+  max-width: 300px;
+  max-height: 400px;
+}
+.Section-3 .card img{
+  border-radius:5px !important;
+}
+.Section-3 .card-1{
+  background-image: url("https://res.cloudinary.com/dnt87ynpz/image/upload/v1735289921/male-boxer-posing-t-shirt-with-arms-crossed_a8nub7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* SECTION-6 */
+.Section-6{
+  min-height: 100vh;
+  padding:5% 20%;
+  
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.Section-6 .container{
+  border-radius:10px;
+  box-shadow: 0 0 10px 3px #84ec34;
+
+  
+}
+
+.contact_us_image_area{
+  background-color: #84ec34;
+  
+  padding: 20px;
+  text-align: center;
+}
+.contact_form_area{
+  color: white;
+  background-color:transparent;
+  min-height: 80vh;
+  padding: 20px ;
+  
+}
+legend{
+  
+  background-color: #84ec34;
+  border-radius: 5px;
+  color: black;
+  
+}
+
+form{
+  
+  
+  
+  font-size:inherit;
+  accent-color: #84ec34;
+  
+  border:none;
+}
+.contact_us_image img{
+  width:100%
+}
+::placeholder { 
+  color: rgba(255, 255, 255, 0.522) !important;;
+}
+.form-text{
+  color:#84ec3495 !important;
+}
+input{ 
+  border: 2px solid #84ec34!important;
+  background-color: transparent!important;
+  border-color: #84ec34!important;
+  color: aliceblue!important;
+  border-radius: 5px !important;
+}
+.form_buttons{
+ 
+  margin-top: 10px;
+}
+@media(max-width:890px){
+  .Section-6{
+    padding:5% 10%;
+
+    }
+
+}
