@@ -49,21 +49,7 @@ The website is suitable for:
 
 ---
 
-## 🤝 4. Contribution Guidelines  
 
-Want to contribute? Follow these steps:  
-1. Fork the repository.  
-2. Create a new branch for your feature or bug fix (`git checkout -b feature-name`).  
-3. Make your changes and ensure consistent code formatting.  
-4. Commit your updates (`git commit -m "Add feature: description"`).  
-5. Push to your branch and create a Pull Request.  
-
-Please ensure new contributions:  
-- Maintain responsiveness and consistent design.  
-- Follow naming conventions for clarity.  
-- Are well-documented in code comments where necessary.  
-
----
 
 ## 🚀 5. Future Improvements  
 
