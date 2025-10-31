@@ -11,9 +11,8 @@ Built with clean HTML, CSS, JavaScript, and **Bootstrap**, this project focuses 
 1. Project Overview  
 2. Features  
 3. Tech Stack  
-4. Contribution Guidelines  
-5. Future Improvements  
-6. License  
+4. Future Improvements  
+5. License  
 
 ---
 
@@ -51,7 +50,7 @@ The website is suitable for:
 
 
 
-## 🚀 5. Future Improvements  
+## 🚀 4. Future Improvements  
 
 - Integrate backend for contact form (Node.js, Firebase, or PHP).  
 - Add login & membership management system.  
@@ -62,7 +61,7 @@ The website is suitable for:
 
 ---
 
-## 📄 6. License  
+## 📄 5. License  
 
 This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute the code with proper attribution.  
